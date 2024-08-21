@@ -5,8 +5,9 @@ The server, built with Django, processes these messages, stores them in MongoDB,
 
 ## Project Overview
 
-- **Client**: Publishes MQTT messages to RabbitMQ.
-- **Server**: Consumes messages from RabbitMQ, stores them in MongoDB, and exposes a REST API.
+- **Client**: Publishes MQTT messages to RabbitMQ. (messagePublisher.py)
+- **Server**: Consumes messages from RabbitMQ, stores them in MongoDB, and exposes a REST API using Django.(UG_Assignment/UpswingMessages/MessageConsumer
+/Consumer.py)
 
 ## Repository Structure
 
@@ -25,4 +26,6 @@ upswingGlobal/
 ├── messagePublisher.py       # Client script for publishing messages to RabbitMQ
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Project setup and operation instructions
+
+
 
